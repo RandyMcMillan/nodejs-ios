@@ -13,7 +13,7 @@ import * as http from 'http';
   //response.end('pk: ' + JSON.stringify(pk));
 //});
 //pk_server.listen(3003);
-var versions_server = http.createServer( (request, response) => {
+var versions_server_3001 = http.createServer( (request, response) => {
   response.end('Versions: ' + JSON.stringify(process.versions));
 });
-versions_server.listen(3000);
+versions_server_3001.listen(3001);
