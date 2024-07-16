@@ -1,0 +1,4 @@
+node_modules/@noble/
+node_modules/@scure/
+node_modules/nostr-tools/
+node_modules/nostr-wasm/
