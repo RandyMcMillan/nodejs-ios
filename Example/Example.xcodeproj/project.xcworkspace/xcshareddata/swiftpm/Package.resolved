@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "nodejs-ios",
-        "repositoryURL": "https://github.com/kewlbear/nodejs-ios.git",
-        "state": {
-          "branch": "main",
-          "revision": "28b3a6fc90f069ca703199b7bb35a371a7696465",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "nodejs-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kewlbear/nodejs-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c0c49b3b4522ad651ebd8b794bb9b3b4cfe18588"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
