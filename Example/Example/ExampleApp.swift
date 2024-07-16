@@ -37,7 +37,8 @@ struct ExampleApp: App {
     }
     
     init() {
-        let srcPath = Bundle.main.path(forResource: "nodejs-project/main.js", ofType: "")
+        //let srcPath = Bundle.main.path(forResource: "nodejs-project/main.js", ofType: "")
+        let srcPath = Bundle.main.path(forResource: "nodejs-project/main.mjs", ofType: "")
         nodeQueue.async {
             NodeRunner.startEngine(arguments: [
                 "node",

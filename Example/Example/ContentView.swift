@@ -36,6 +36,7 @@ struct ContentView: View {
             Button {
                 do {
                     let data = try Data(contentsOf: URL(string: "http://127.0.0.1:3000")!)
+                    //let data = try Data(contentsOf: URL(string: "http://127.0.0.1:3001")!)
                     info = String(data: data, encoding: .utf8) ?? "not UTF-8?"
                 } catch {
                     info = error.localizedDescription
