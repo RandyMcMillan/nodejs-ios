@@ -26,23 +26,36 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var info = ""
-    
+    @State var info_1 = ""
+    @State var info_2 = ""
+
     var body: some View {
         VStack {
-            Text(info)
+            Text(info_1)
                 .padding()
             
             Button {
                 do {
                     let data = try Data(contentsOf: URL(string: "http://127.0.0.1:3000")!)
-                    //let data = try Data(contentsOf: URL(string: "http://127.0.0.1:3001")!)
-                    info = String(data: data, encoding: .utf8) ?? "not UTF-8?"
+                    info_1 = String(data: data, encoding: .utf8) ?? "not UTF-8?"
                 } catch {
-                    info = error.localizedDescription
+                    info_1 = error.localizedDescription
                 }
             } label: {
-                Text("Submit")
+                Text("Submit1")
+            }
+            Text(info_2)
+                .padding()
+
+            Button {
+                do {
+                    let data = try Data(contentsOf: URL(string: "http://127.0.0.1:3001")!)
+                    info_2 = String(data: data, encoding: .utf8) ?? "not UTF-8?"
+                } catch {
+                    info_2 = error.localizedDescription
+                }
+            } label: {
+                Text("Submit2")
             }
         }
     }
